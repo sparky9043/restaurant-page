@@ -124,7 +124,7 @@ button {
 }
 
 .header {
-  padding: .2rem .5rem;
+  padding: 1rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -156,4 +156,11 @@ button {
 .header__buttons button:hover {
   cursor: pointer;
   text-shadow: 1px 1px 5px grey;
+}
+
+#content {
+  width: 80%;
+  max-width: 1200px;
+  border: 2px solid blue;
+  margin: 0 auto;
 }
