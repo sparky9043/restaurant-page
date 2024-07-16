@@ -4,14 +4,14 @@ function updateHome(contentDiv) {
   const homeContainer = document.createElement('div');
   const header = document.createElement('h2');
   const intro = document.createElement('p');
-  
+
   homeContainer.classList.add('container');
   
 
   const contentArray = [header, intro];
   
-  header.textContent = 'Hello and welcome to my restaurant!';
-  intro.textContent = 'This restaurant has been in my family for generations!';
+  header.textContent = 'Bienvenue dans mon restaurant!';
+  intro.textContent = 'This restaurant has been in my family for generations since its conception in 1867!';
 
   for (const content of contentArray) {
     homeContainer.appendChild(content);
