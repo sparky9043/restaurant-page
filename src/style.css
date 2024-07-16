@@ -127,10 +127,11 @@ button {
   border: none;
 }
 
-.header {
-  padding: 1rem;
+.container {
+  width: 80%;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 }
 
 .header__title {
@@ -163,8 +164,6 @@ button {
 }
 
 #content {
-  width: 80%;
-  max-width: 1200px;
   border: 2px solid blue;
   margin: 0 auto;
 
