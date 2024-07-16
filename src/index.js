@@ -1,6 +1,7 @@
 import updateHome from "./home";
 import updateMenu from "./menu";
 import updateAbout from "./about";
+import './style.css';
 
 const enableUI = (function() {
   const buttons = document.querySelectorAll('.header button');
