@@ -124,6 +124,12 @@ button {
   border: none;
 }
 
+.header {
+  padding: .2rem .5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .row {
   display: flex;
 }
