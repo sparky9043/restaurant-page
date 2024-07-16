@@ -180,7 +180,7 @@ button {
 }
 
 .header__buttons button:disabled {
-  cursor: text;
+  cursor: default;
 }
 
 #content {
