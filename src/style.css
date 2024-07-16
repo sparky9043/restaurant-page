@@ -90,7 +90,7 @@
 }
 
 @font-face {
-  font-family: 'playwrite_peregular';
+  font-family: 'playwrite';
   src: url('./playwritepe-variablefont_wght-webfont.woff2') format('woff2'),
        url('./playwritepe-variablefont_wght-webfont.woff') format('woff');
   font-weight: normal;
@@ -130,6 +130,10 @@ button {
   align-items: center;
 }
 
+.header__title {
+  font-family: 'playwrite';
+}
+
 .row {
   display: flex;
 }
@@ -142,7 +146,15 @@ button {
 #home-btn,
 #menu-btn,
 #about-btn {
-  padding: .5rem .8rem;
+  font-family: 'playwrite';
+  font-weight: 600;
+  padding: .5rem .5rem;
   font-size: 1.2rem;
   border-radius: 5px;
+  background: none;
+}
+
+.header__buttons button:hover {
+  cursor: pointer;
+  text-shadow: 1px 1px 5px grey;
 }
