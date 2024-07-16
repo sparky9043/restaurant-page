@@ -4,6 +4,9 @@ function updateHome(contentDiv) {
   const homeContainer = document.createElement('div');
   const header = document.createElement('h2');
   const intro = document.createElement('p');
+  
+  homeContainer.classList.add('container');
+  
 
   const contentArray = [header, intro];
   

@@ -5,6 +5,9 @@ function updateAbout(contentDiv) {
   const header = document.createElement('h2');
   const intro = document.createElement('p');
 
+  aboutContainer.classList.add('container');
+  
+
   const contentArray = [header, intro];
   
   header.textContent = 'We have been in business since 1847';
