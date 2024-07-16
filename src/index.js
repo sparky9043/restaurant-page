@@ -10,6 +10,15 @@ const enableUI = (function() {
   var currentPage = 'home';
   updateHome(content);
 
+  const disableButtons = (buttons) => {
+    for (const button of buttons) {
+      button.disabled = button.id === currentPage ? true : false;
+    }
+  }
+
+  disableButtons(buttons);
+
+
   buttons.forEach(button => button.addEventListener('click', function(event) {
     const target = event.target;
 
@@ -23,7 +32,8 @@ const enableUI = (function() {
       currentPage = 'about';
       updateAbout(content);
     }
-    
+
+    disableButtons(buttons);
   }));
 
 })();
