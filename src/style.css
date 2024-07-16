@@ -143,6 +143,10 @@ button {
   font-family: 'playwrite';
 }
 
+.header__title:hover {
+  cursor: default;
+}
+
 .row {
   display: flex;
 }
