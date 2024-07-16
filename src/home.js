@@ -5,13 +5,13 @@ function updateHome(contentDiv) {
   const header = document.createElement('h2');
   const intro = document.createElement('p');
 
+  const contentArray = [header, intro];
+
   homeContainer.classList.add('container');
   
-
-  const contentArray = [header, intro];
-  
   header.textContent = 'Bienvenue dans mon restaurant!';
-  intro.textContent = 'This restaurant has been in my family for generations since its conception in 1867!';
+  intro.textContent = `This restaurant has been in my family for generations since its conception in 1867!
+  We hope you enjoy our food as much as we do making it! Merci!`;
 
   for (const content of contentArray) {
     homeContainer.appendChild(content);
