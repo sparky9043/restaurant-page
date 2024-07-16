@@ -104,6 +104,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: 18px;
+}
+
 body {
   font-family: 'latoregular', sans-serif;
   margin: 0;
@@ -163,4 +167,11 @@ button {
   max-width: 1200px;
   border: 2px solid blue;
   margin: 0 auto;
+
+  font-size: 1.2rem;
+  line-height: 1.1;
+}
+
+#content h2 {
+  font-family: 'playwrite';
 }
