@@ -147,9 +147,9 @@ button {
   gap: 2rem;
 }
 
-#home-btn,
-#menu-btn,
-#about-btn {
+#home,
+#menu,
+#about {
   font-family: 'playwrite';
   font-weight: 600;
   padding: .5rem .5rem;
