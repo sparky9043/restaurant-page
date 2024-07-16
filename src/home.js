@@ -10,8 +10,7 @@ function updateHome(contentDiv) {
   homeContainer.classList.add('container');
   
   header.textContent = 'Bienvenue dans mon restaurant!';
-  intro.textContent = `This restaurant has been in my family for generations since its conception in 1867!
-  We hope you enjoy our food as much as we do making it! Merci!`;
+  intro.textContent = 'This restaurant has been in my family for generations since its conception in 1867! We hope you enjoy our food as much as we do making it!';
 
   for (const content of contentArray) {
     homeContainer.appendChild(content);
