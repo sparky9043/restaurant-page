@@ -12,9 +12,9 @@ const enableUI = (function() {
     if (id.includes('home')) {
       updateHome(content);
     } else if (id.includes('menu')) {
-      console.log(id);
+      updateMenu(content);
     } else if (id.includes('about')) {
-      console.log(id);
+      updateAbout(content);
     }
     
   }));
