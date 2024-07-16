@@ -7,15 +7,16 @@ const enableUI = (function() {
   const content = document.querySelector('#content');
 
   buttons.forEach(button => button.addEventListener('click', function(event) {
-    const id = event.target.id;
+    const target = event.target;
 
-    if (id.includes('home')) {
+    if (target.id.includes('home')) {
       updateHome(content);
-    } else if (id.includes('menu')) {
+    } else if (target.id.includes('menu')) {
       updateMenu(content);
-    } else if (id.includes('about')) {
+    } else if (target.id.includes('about')) {
       updateAbout(content);
     }
     
   }));
+
 })();
