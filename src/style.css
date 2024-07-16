@@ -134,6 +134,11 @@ button {
   margin: 0 auto;
 }
 
+.header {
+  background: #c2410c;
+  color: antiquewhite;
+}
+
 .header__title {
   font-family: 'playwrite';
 }
@@ -150,6 +155,7 @@ button {
 #home,
 #menu,
 #about {
+  color: inherit;
   font-family: 'playwrite';
   font-weight: 600;
   padding: .5rem .5rem;
@@ -160,7 +166,7 @@ button {
 
 .header__buttons button:hover {
   cursor: pointer;
-  text-shadow: 1px 1px 4px rgb(207, 207, 207);
+  text-shadow: 1px 1px 4px rgb(85, 85, 85);
 }
 
 .header__buttons button:disabled {
