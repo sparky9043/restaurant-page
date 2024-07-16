@@ -18,22 +18,26 @@ const enableUI = (function() {
 
   disableButtons(buttons);
 
+  const attachEventListener = (buttons) => {
+    buttons.forEach(button => button.addEventListener('click', function(event) {
+      const target = event.target;
 
-  buttons.forEach(button => button.addEventListener('click', function(event) {
-    const target = event.target;
+      if (target.id.includes('home') && currentPage !== 'home') {
+        currentPage = 'home';
+        updateHome(content);
+      } else if (target.id.includes('menu') && currentPage !== 'menu') {
+        currentPage = 'menu';
+        updateMenu(content);
+      } else if (target.id.includes('about') && currentPage !== 'about') {
+        currentPage = 'about';
+        updateAbout(content);
+      }
 
-    if (target.id.includes('home') && currentPage !== 'home') {
-      currentPage = 'home';
-      updateHome(content);
-    } else if (target.id.includes('menu') && currentPage !== 'menu') {
-      currentPage = 'menu';
-      updateMenu(content);
-    } else if (target.id.includes('about') && currentPage !== 'about') {
-      currentPage = 'about';
-      updateAbout(content);
-    }
+      disableButtons(buttons);
+    }));
 
-    disableButtons(buttons);
-  }));
+  }
 
+  attachEventListener(buttons);
+  
 })();
