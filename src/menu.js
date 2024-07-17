@@ -5,8 +5,9 @@ function updateMenu(contentDiv) {
   const header = document.createElement('h2');
   const intro = document.createElement('p');
 
-  menuContainer.classList.add('container');
-  
+  menuContainer.classList.add('container', 'menu-grid');
+  header.classList.add('menu__title');
+  intro.classList.add('menu__intro');
 
   const contentArray = [header, intro];
   

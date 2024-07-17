@@ -202,3 +202,20 @@ button {
   padding: 2rem 0;
   background: #c2410c;
 }
+
+.menu-grid {
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "intro intro"
+    ". .";
+    grid-template-columns: repeat(1, 200px);
+}
+
+.menu__title {
+  grid-area: title;
+}
+
+.menu__intro {
+  grid-area: intro;
+}
