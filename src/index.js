@@ -1,6 +1,6 @@
 import updateHome from "./home";
 import updateMenu from "./menu";
-import updateAbout from "./about";
+import updateContact from "./contact";
 import './style.css';
 
 const enableUI = (function() {
@@ -28,9 +28,9 @@ const enableUI = (function() {
       } else if (target.id.includes('menu') && currentPage !== 'menu') {
         currentPage = 'menu';
         updateMenu(content);
-      } else if (target.id.includes('about') && currentPage !== 'about') {
-        currentPage = 'about';
-        updateAbout(content);
+      } else if (target.id.includes('contact') && currentPage !== 'contact') {
+        currentPage = 'contact';
+        updateContact(content);
       }
 
       disableButtons(buttons);
