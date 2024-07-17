@@ -209,7 +209,9 @@ button {
     "title title"
     "intro intro"
     ". .";
-    grid-template-columns: repeat(1, 200px);
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 5rem;
+  grid-auto-rows: 5rem; 
 }
 
 .menu__title {
