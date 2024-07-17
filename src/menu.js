@@ -5,11 +5,20 @@ function updateMenu(contentDiv) {
   const header = document.createElement('h2');
   const intro = document.createElement('p');
 
+  const foodOneImg = document.createElement('img');
+  const foodOneText = document.createElement('p');
+
   menuContainer.classList.add('container', 'menu-grid');
   header.classList.add('menu__title');
   intro.classList.add('menu__intro');
 
-  const contentArray = [header, intro];
+  foodOneImg.classList.add('menu__foodOne--img');
+  foodOneText.classList.add('menu__foodOne--text');
+
+  foodOneText.textContent = 'Cafe au lait $8.00';
+
+
+  const contentArray = [header, intro, foodOneImg, foodOneText];
   
   header.textContent = 'This is the menu!';
   intro.textContent = 'Take a look at how cheap and affordable it is!';
