@@ -208,8 +208,8 @@ button {
   grid-template-areas:
     "title title"
     "intro intro"
-    ". .";
-  grid-template-columns: repeat(1, 1fr);
+    "foodOneImg foodOneText";
+  grid-template-columns: 30ch 1fr;
   grid-template-rows: 5rem;
   grid-auto-rows: 5rem; 
 }
@@ -220,4 +220,11 @@ button {
 
 .menu__intro {
   grid-area: intro;
+}
+
+.menu__foodOne--img {
+  display: inline-block;
+  background: url('./cafe-logo.png');
+  width: 100px;
+  height: 100px;
 }
